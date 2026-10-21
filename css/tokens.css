@@ -1,0 +1,77 @@
+/* =========================================================
+   YUMI · PORTFOLIO — Design Tokens (v2.0)
+   颜昱帆品牌运营作品集 · Y2K 千禧风 + 数字潮玩 + 多巴胺撞色
+   ========================================================= */
+
+:root {
+  /* ---- 主色（蓝色基调）---- */
+  --c-klein:    #141CDE;   /* 克莱因蓝 · Hero 背景 / 强调 */
+  --c-blue:     #2A75FF;   /* 电光宝蓝 · 渐变辅助 / 卡片底色 */
+
+  /* ---- 点缀色（多巴胺撞色）---- */
+  --c-pink:     #FF4D94;   /* 玫粉 · hover / 丝带 / 强调标签 */
+  --c-yellow:   #FFE500;   /* 明黄 · 数据高亮 / 跑马灯 / 年度标签 */
+  --c-orange:   #FF5A00;   /* 亮橙 · 装饰线 / 点缀 */
+  --c-chrome:   #C0C0C0;   /* 镀铬银 · 金属扣 / 四角星 / 镀铬 */
+
+  /* ---- 中性色 ---- */
+  --c-white:    #FFFFFF;
+  --c-paper:    #F4F4F2;   /* 做旧纸白 */
+  --c-charcoal: #1A1A1A;
+
+  /* ---- 字体家族 ---- */
+  --f-display:  'Anton', 'Arial Narrow', sans-serif;          /* Display 粗体 · Section 标题 */
+  --f-bubble:   'Bowlby One', 'Anton', sans-serif;            /* 圆润粗体 · Hero YUMI 亚克力牌 */
+  --f-ui:       'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --f-hand:     'Caveat', 'Comic Sans MS', cursive;           /* 手写体 · 签名/引言 */
+  --f-mono:     'JetBrains Mono', 'Consolas', monospace;      /* 等宽 · 跑马灯/条形码/注解 */
+  --f-serif:    'Noto Serif SC', 'Songti SC', serif;          /* 中文正文 · 思源宋体 */
+
+  /* ---- 字号层级（桌面基准）---- */
+  --fs-display: clamp(96px, 12vw, 200px);
+  --fs-h1:      clamp(56px, 7vw, 96px);
+  --fs-h2:      clamp(40px, 5vw, 64px);
+  --fs-h3:      clamp(24px, 3vw, 36px);
+  --fs-h4:      clamp(16px, 2vw, 22px);
+  --fs-body:    15px;
+  --fs-small:   11px;
+
+  /* ---- 字距 ---- */
+  --ls-wide: 0.2em;        /* 全大写小字必带 */
+
+  /* ---- 圆角（硬软结合）---- */
+  --r-lg:   32px;          /* 大卡片 / 文件夹 / 模态框 */
+  --r-mid:  18px;          /* 中型卡片 / 数据卡 / 图片 */
+  --r-btn:  999px;         /* 按钮 / 胶囊 */
+  --r-tag:  10px;          /* 小标签 / 输入框 */
+  --r-pol:  6px;           /* 拍立得边框 */
+  --r-none: 0;             /* 条形码 / 网格线 硬边 */
+
+  /* ---- 阴影（Y2K 硬投影）---- */
+  --sh-0: 0 2px 8px rgba(20, 28, 222, 0.15);
+  --sh-1: 4px 4px 0 var(--c-klein);
+  --sh-2: 8px 8px 0 var(--c-pink);
+  --sh-3: 12px 12px 0 var(--c-yellow);
+  --sh-black: 8px 8px 0 #000;
+
+  /* ---- 动效 ---- */
+  --t-fast: 200ms;
+  --t-med:  300ms;
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- 间距 ---- */
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 40px;
+  --sp-2xl: 64px;
+  --sp-3xl: 96px;
+
+  /* ---- 容器 ---- */
+  --ct: 1280px;
+  --pad-xl: 80px;
+  --pad-l: 60px;
+  --pad-tab: 48px;
+  --pad-mob: 24px;
+}

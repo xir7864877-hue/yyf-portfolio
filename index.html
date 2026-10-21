@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUMI · PORTFOLIO — 颜昱帆 · Brand Operator</title>
+<meta name="description" content="颜昱帆 Yumi · 品牌运营作品集 · 设计专业出身 · 横跨文娱/消费/文旅三赛道 · 27届校招">
+<meta name="theme-color" content="#141CDE">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One&family=Inter:wght@400;600;700;800;900&family=Caveat:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css?v=3">
+<link rel="stylesheet" href="css/base.css?v=3">
+<link rel="stylesheet" href="css/components.css?v=32">
+<link rel="stylesheet" href="css/sections.css?v=72">
+<link rel="stylesheet" href="css/responsive.css?v=146">
+</head>
+<body class="grain">
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="YUMI 首页">Y</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="打开导航"></button>
+  </div>
+</nav>
+
+<!-- ================= SECTION 1 · HERO（素材替换版） ================= -->
+<section class="hero" id="hero">
+  <div id="hero-particles"></div>
+
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+  <div class="hero-orb o3"></div>
+
+  <div class="hero-sparkles" aria-hidden="true">
+    <span class="sparkle s1">✦</span>
+    <span class="sparkle s2">✦</span>
+    <span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✦</span>
+    <span class="sparkle s5">✦</span>
+    <span class="sparkle s6">✦</span>
+    <span class="sparkle s7">✦</span>
+    <span class="sparkle s8">✦</span>
+  </div>
+
+  <div class="hero-corner tl">YUMI<span class="hl">·</span>2026</div>
+  <div class="hero-corner tr">BRAND OPERATOR</div>
+  <div class="hero-corner bl">ANHUI POLYTECHNIC UNIVERSITY</div>
+  <div class="hero-corner br">27 GRADUATE</div>
+
+  <!-- 中心钥匙扣体系（整图素材版 · 物理弹簧鼠标跟随） -->
+  <div class="hero-keychain" id="keychain">
+    <div class="kc-full" role="img" aria-label="YUMI 钥匙扣"></div>
+  </div>
+
+  <!-- 钥匙扣地面物理投影（随钟摆同步晃动） -->
+  <div class="keychain-shadow" aria-hidden="true"></div>
+
+  <div class="hero-cta-wrap">
+    <a href="#about" class="hero-cta"><span class="sr-only">Start</span></a>
+  </div>
+</section>
+
+<!-- ================= 跑马灯 · 数据 ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">
+      <span class="m-star">✦</span> 18.8W 微博曝光 <span class="m-pink">✦</span> 300+ 到场人数 <span class="m-blue">✦</span> 797 INS 粉丝 <span class="m-pink">✦</span> 2W+ 话题浏览 <span class="m-star">✦</span> 400 到场 <span class="m-blue">✦</span> 92% 好评 <span class="m-pink">✦</span> 国家级二等奖 <span class="m-star">✦</span> 省挑战杯一等奖
+    </span>
+    <span class="marquee-item">
+      <span class="m-star">✦</span> 18.8W 微博曝光 <span class="m-pink">✦</span> 300+ 到场人数 <span class="m-blue">✦</span> 797 INS 粉丝 <span class="m-pink">✦</span> 2W+ 话题浏览 <span class="m-star">✦</span> 400 到场 <span class="m-blue">✦</span> 92% 好评 <span class="m-pink">✦</span> 国家级二等奖 <span class="m-star">✦</span> 省挑战杯一等奖
+    </span>
+  </div>
+</div>
+
+<!-- ================= SECTION 2 · ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="container">
+    <span class="section-label js-anim">About Me</span>
+    <h2 class="section-title js-anim">HELLO, I'M <span class="accent">YUMI</span></h2>
+
+    <div class="about-grid">
+      <div class="about-left js-anim">
+        <span class="sparkle sp1" aria-hidden="true">✦</span>
+        <span class="sparkle sp2" aria-hidden="true">✦</span>
+        <div class="polaroid">
+          <video src="images/about-video.mp4" autoplay muted loop playsinline preload="auto" aria-label="品牌视觉动态展示"></video>
+        </div>
+      </div>
+
+      <div class="about-right js-anim">
+        <p class="about-position">
+          <strong>设计专业出身</strong>的品牌运营人，<br>
+          横跨 <span class="cross">文娱</span> / <span class="cross">消费</span> / <span class="cross">文旅</span> 三赛道
+        </p>
+
+        <p class="about-claim">
+          能操盘品牌从策划到落地全流程，以<strong>曝光、到场、转化、营收</strong>等量化指标驱动决策
+        </p>
+
+        <div class="about-personal-row js-anim">
+          <div class="about-personal">
+            <h4 class="personal-title">关于我 <em>(is me)</em></h4>
+            <ul class="personal-list">
+              <li>颜昱帆（Yumi）</li>
+              <li>2005.06.25</li>
+              <li>安徽工程大学（本科）</li>
+              <li>服装与服饰设计</li>
+            </ul>
+          </div>
+          <div class="about-personal about-personal-side">
+            <ul class="personal-list">
+              <li>品牌营销</li>
+              <li>社媒内容营销与传播</li>
+              <li>产品营销</li>
+              <li>粉丝社群运营</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-skills">
+          <div class="skill-group js-anim">
+            <span class="skill-group-label">Design Tools</span>
+            <div class="skill-cloud">
+              <img class="skill-tag-img" src="images/skills/ps.png" alt="PS">
+              <img class="skill-tag-img" src="images/skills/ai.png" alt="AI">
+              <img class="skill-tag-img" src="images/skills/loeat.png" alt="Lovart">
+              <img class="skill-tag-img" src="images/skills/mj.png" alt="MJ">
+            </div>
+          </div>
+          <div class="skill-group js-anim">
+            <span class="skill-group-label">AI Visual</span>
+            <div class="skill-cloud">
+              <img class="skill-tag-img" src="images/skills/codex.png" alt="Codex">
+              <img class="skill-tag-img" src="images/skills/chatGPT.png" alt="ChatGPT">
+              <img class="skill-tag-img" src="images/skills/CDR.png" alt="CDR">
+              <img class="skill-tag-img" src="images/skills/剪映.png" alt="剪映">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATA SNAPSHOT ================= -->
+<section class="section data-section" id="data">
+  <div class="container">
+    <span class="section-label js-anim">Data Snapshot</span>
+    <h2 class="section-title js-anim">能力 × 成果</h2>
+
+    <div class="data-ability-grid">
+      <div class="ability-card js-anim">
+        <span class="tag tag-pink">Creative</span>
+        <h4>品牌视觉体系 / 活动 IP 打造 / 营销策略</h4>
+        <div class="anchor">✦ 双款产品视觉 · 跑山节 IP</div>
+      </div>
+      <div class="ability-card js-anim">
+        <span class="tag tag-blue">Content</span>
+        <h4>海报物料 / 宣发文案 / 账号内容</h4>
+        <div class="anchor">✦ 3 套主视觉 · 12 条物料</div>
+      </div>
+      <div class="ability-card js-anim">
+        <span class="tag tag-orange">Channel</span>
+        <h4>KOL 建联 / 展会对接 / 平台矩阵 / 私域</h4>
+        <div class="anchor">✦ 海外订单 · 平台粉丝</div>
+      </div>
+    </div>
+
+    <div class="data-metric-grid">
+      <div class="data-card js-anim">
+        <div class="data-number">18.8w</div>
+        <div class="data-label">一周年拼盘微博曝光</div>
+      </div>
+      <div class="data-card js-anim">
+        <div class="data-number">300+</div>
+        <div class="data-label">到场人数</div>
+      </div>
+      <div class="data-card js-anim">
+        <div class="data-number">797</div>
+        <div class="data-label">INS 粉丝</div>
+      </div>
+      <div class="data-card js-anim">
+        <div class="data-number">2w+</div>
+        <div class="data-label">具所词条话题浏览</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 · EXPERIENCE ================= -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <span class="section-label js-anim">Experience</span>
+    <h2 class="section-title js-anim">实习经历 <span class="accent-yellow">×4</span></h2>
+    <p class="exp-hint js-anim">EXPERIENCE TIMELINE · 4 段实习成长轨迹</p>
+  </div>
+
+  <div class="exp-scroll" id="expScroll">
+    <div class="wheel-carousel" id="expWheel">
+      <div class="wc-photo" data-sticker="EVENT">
+        <div class="wc-card wc-active" data-idx="0" data-accent="orange" data-sticker="EVENT">
+          <div class="wc-time">2024.10 — 2025.10</div>
+          <div class="wc-company">合肥背影庇护文化传媒</div>
+          <div class="wc-role">演出品牌策划与执行</div>
+          <div class="wc-data">
+            <span class="data-pill">30 团体</span>
+            <span class="data-pill">150 人</span>
+            <span class="data-pill">票房 1w+</span>
+            <span class="data-pill">微博 9.3w</span>
+          </div>
+        </div>
+        <div class="wc-card" data-idx="1" data-accent="blue" data-sticker="CONTENT">
+          <div class="wc-time">2025.08 — 2025.10</div>
+          <div class="wc-company">上海具所 juubicle showroom</div>
+          <div class="wc-role">品牌内容运营</div>
+          <div class="wc-data">
+            <span class="data-pill">12 条物料</span>
+            <span class="data-pill">2w+ 浏览</span>
+            <span class="data-pill">200㎡ 展区</span>
+          </div>
+        </div>
+        <div class="wc-card" data-idx="2" data-accent="yellow" data-sticker="BRAND">
+          <div class="wc-time">2025.10 — 2026.03</div>
+          <div class="wc-company">CRUSH STRAP 吉他背带品牌</div>
+          <div class="wc-role">品牌视觉 / 市场推广</div>
+          <div class="wc-data">
+            <span class="data-pill">抖音 600+</span>
+            <span class="data-pill">INS 797</span>
+            <span class="data-pill">海外订单</span>
+          </div>
+        </div>
+        <div class="wc-card" data-idx="3" data-accent="pink" data-sticker="NOW">
+          <div class="wc-time">2026.04 — 至今</div>
+          <div class="wc-company">杭州星途众元文化传媒</div>
+          <div class="wc-role">品牌活动企划 / 宣发统筹</div>
+          <div class="wc-data">
+            <span class="data-pill">微博 18.8w</span>
+            <span class="data-pill">300+ 到场</span>
+            <span class="data-pill">90+ 指名票</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wc-wheel" id="wcWheel">
+        <span class="wc-marker" aria-hidden="true"></span>
+        <div class="wc-label" data-idx="0">OCT 2024<span class="wc-sub">OCT 2025</span></div>
+        <div class="wc-label" data-idx="1">AUG 2025<span class="wc-sub">OCT 2025</span></div>
+        <div class="wc-label" data-idx="2">OCT 2025<span class="wc-sub">MAR 2026</span></div>
+        <div class="wc-label" data-idx="3">APR 2026<span class="wc-sub">NOW</span></div>
+              </div>
+    </div>
+  </div>
+
+  <button class="wc-next" id="wcNext" type="button">NEXT</button>
+</section>
+
+<!-- ================= SECTION 4 · PROJECTS ================= -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <span class="section-label js-anim">Projects · 07</span>
+    <h2 class="section-title js-anim">作品集 <span class="accent">✧</span></h2>
+    <p class="projects-hint js-anim">点击卡片看详情</p>
+
+    <div class="folders">
+
+      <!-- 文件夹 1 · 品牌与市场 -->
+      <div class="folder js-anim" data-accent="pink">
+        <div class="folder-back"></div>
+        <div class="folder-cards">
+          <a href="#" class="folder-card" data-project="crush-strap">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">CRUSH STRAP 吉他背带</div>
+                <span class="folder-card-sub">创意 · 内容 · 渠道</span>
+              </div>
+              <span class="folder-card-num">01</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">双款产品视觉</span>
+              <span class="fc-pill">抖音 600+</span>
+              <span class="fc-pill">INS 797</span>
+            </div>
+          </a>
+
+          <a href="#" class="folder-card" data-project="showroom">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">具所 juubicle 订货会</div>
+                <span class="folder-card-sub">内容 · 展区执行</span>
+              </div>
+              <span class="folder-card-num">02</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">12 条物料</span>
+              <span class="fc-pill">2w+ 浏览</span>
+              <span class="fc-pill">200㎡ 展区</span>
+            </div>
+          </a>
+
+          <a href="#" class="folder-card" data-project="competition">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">安奈儿品牌营销案</div>
+                <span class="folder-card-sub">市场分析 · 策略落地</span>
+              </div>
+              <span class="folder-card-num">03</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">国家级</span>
+              <span class="fc-pill">二等奖</span>
+            </div>
+          </a>
+        </div>
+        <div class="folder-front">
+          <span class="folder-tag">01 · Brand</span>
+          <span class="folder-name">品牌与市场</span>
+          <span class="folder-name-en">Brand &amp; Marketing · 3 Projects</span>
+        </div>
+      </div>
+
+      <!-- 文件夹 2 · 演出企划 -->
+      <div class="folder js-anim" data-accent="yellow">
+        <div class="folder-back"></div>
+        <div class="folder-cards">
+          <a href="#" class="folder-card" data-project="anniversary">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">AMOR 一周年公演</div>
+                <span class="folder-card-sub">企划 · 宣发统筹</span>
+              </div>
+              <span class="folder-card-num">04</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">微博 18.8w</span>
+              <span class="fc-pill">300+ 到场</span>
+              <span class="fc-pill">90+ 指名票</span>
+            </div>
+          </a>
+
+          <a href="#" class="folder-card" data-project="sugar-supply">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">背影骑士拼盘系列</div>
+                <span class="folder-card-sub">策划 · 执行</span>
+              </div>
+              <span class="folder-card-num">05</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">20+ 团体</span>
+              <span class="fc-pill">常态化</span>
+              <span class="fc-pill">一次性过审</span>
+            </div>
+          </a>
+        </div>
+        <div class="folder-front">
+          <span class="folder-tag">02 · Perf</span>
+          <span class="folder-name">演出企划</span>
+          <span class="folder-name-en">Performance · 2 Projects</span>
+        </div>
+      </div>
+
+      <!-- 文件夹 3 · 文旅与活动 -->
+      <div class="folder js-anim" data-accent="blue">
+        <div class="folder-back"></div>
+        <div class="folder-cards">
+          <a href="#" class="folder-card" data-project="matouyao">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">马头窑文旅 · 织韵窑裳</div>
+                <span class="folder-card-sub">文旅策划 · 跑山节 IP</span>
+              </div>
+              <span class="folder-card-num">06</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">挑战杯一等奖</span>
+              <span class="fc-pill">🏷️ 跑山节</span>
+            </div>
+          </a>
+
+          <a href="#" class="folder-card" data-project="wanda">
+            <div class="fc-top">              <div class="fc-titles">
+                <div class="folder-card-title">万达广场随机舞蹈</div>
+                <span class="folder-card-sub">活动全案 · 现场执行</span>
+              </div>
+              <span class="folder-card-num">07</span>
+            </div>
+            <div class="folder-card-metrics">
+              <span class="fc-pill">400 到场</span>
+              <span class="fc-pill">92% 好评</span>
+              <span class="fc-pill">1.2w+ 预热</span>
+            </div>
+          </a>
+        </div>
+        <div class="folder-front">
+          <span class="folder-tag">03 · Travel</span>
+          <span class="folder-name">文旅与活动</span>
+          <span class="folder-name-en">Tourism &amp; Events · 2 Projects</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 跑马灯 · 项目标签（深色） ================= -->
+<div class="marquee marquee-dark" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">
+      <span class="m-star">✦</span> CRUSH STRAP <span class="m-pink">✦</span> JUUBICLE SHOWROOM <span class="m-star">✦</span> 安奈儿营销案 <span class="m-pink">✦</span> AMOR 一周年 <span class="m-star">✦</span> 背影骑士拼盘 <span class="m-pink">✦</span> 马头窑 · 跑山节 <span class="m-star">✦</span> 万达随机舞蹈
+    </span>
+    <span class="marquee-item">
+      <span class="m-star">✦</span> CRUSH STRAP <span class="m-pink">✦</span> JUUBICLE SHOWROOM <span class="m-star">✦</span> 安奈儿营销案 <span class="m-pink">✦</span> AMOR 一周年 <span class="m-star">✦</span> 背影骑士拼盘 <span class="m-pink">✦</span> 马头窑 · 跑山节 <span class="m-star">✦</span> 万达随机舞蹈
+    </span>
+  </div>
+</div>
+
+<!-- ================= SECTION 5 · AWARDS + CONTACT ================= -->
+<section class="section awards-contact" id="awards">
+  <div class="container">
+    <span class="section-label js-anim">Awards</span>
+    <h2 class="section-title js-anim">获奖荣誉 <span class="accent">★</span></h2>
+
+    <div class="awards-grid">
+      <div class="award-card js-anim">
+        <span class="award-badge gold">Gold · 金奖</span>
+        <div class="award-level">省挑战杯 · 一等奖</div>
+        <div class="award-name">马头窑文旅运营设计</div>
+        <div class="award-year">2026</div>
+      </div>
+
+      <div class="award-card js-anim">
+        <span class="award-badge silver">Silver · 银奖</span>
+        <div class="award-level">全国商业策划 · 二等奖</div>
+        <div class="award-name">安奈儿童装品牌营销</div>
+        <div class="award-year">2024.11</div>
+      </div>
+
+      <div class="award-card js-anim">
+        <span class="award-badge bronze">Color · 色彩奖</span>
+        <div class="award-level">色彩设计奖</div>
+        <div class="award-name">第四届「阅读与美」服装服饰创意设计大赛</div>
+        <div class="award-year">2024</div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-block" id="contact">
+      <h2 class="contact-headline js-anim">Let's Talk</h2>
+      <p class="contact-sub js-anim">想一起做点什么？欢迎品牌合作、面试邀约、活动共创</p>
+      <div class="contact-links js-anim">
+        <a href="mailto:yumiyume@126.com" class="contact-link">
+          <span class="ico">📧</span>
+          <span>yumiyume@126.com</span>
+        </a>
+        <a href="tel:19992525765" class="contact-link">
+          <span class="ico">📱</span>
+          <span>19992525765</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">© 2026 颜昱帆 · BRAND OPERATOR PORTFOLIO · YUMI ✦</div>
+  </div>
+</section>
+
+<!-- ================= 灯箱 ================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="图片预览">
+  <button class="lightbox-close" id="lbClose" aria-label="关闭">×</button>
+  <button class="lightbox-prev" id="lbPrev" aria-label="上一张">‹</button>
+  <img id="lbImg" src="" alt="图片预览">
+  <button class="lightbox-next" id="lbNext" aria-label="下一张">›</button>
+  <span class="lightbox-count" id="lbCount"></span>
+</div>
+
+<script src="js/data.js?v=17"></script>
+<script src="js/main.js?v=3"></script>
+<script src="js/keychain.js?v=2"></script>
+<script src="js/particles.js?v=2"></script>
+<script src="js/folder.js?v=25"></script>
+<script src="js/wheel.js?v=23"></script>
+<script src="js/lightbox.js?v=2"></script>
+</body>
+</html>
