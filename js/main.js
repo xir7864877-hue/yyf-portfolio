@@ -44,7 +44,7 @@
     });
   });
 
-  /* ---------- IntersectionObserver 入场动效 ---------- */
+  /* ---------- IntersectionObserver 入场动效（移动端兼容：进入即触发 + 滚动兜底） ---------- */
   const animEls = document.querySelectorAll('.js-anim');
   if ('IntersectionObserver' in window) {
     const obs = new IntersectionObserver((entries) => {
@@ -54,8 +54,25 @@
           obs.unobserve(en.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0, rootMargin: '0px 0px 18% 0px' });
     animEls.forEach(el => obs.observe(el));
+    /* 兜底：滚动停止后，仍在视口内却未触发动画的元素强制显示（防快速滑动漏检） */
+    let scrollTimer = null;
+    const revealOnScroll = () => {
+      if (scrollTimer) clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        animEls.forEach(el => {
+          if (!el.classList.contains('in-view')) {
+            const r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight && r.bottom > 0) {
+              el.classList.add('in-view');
+            }
+          }
+        });
+      }, 100);
+    };
+    window.addEventListener('scroll', revealOnScroll, { passive: true });
+    revealOnScroll();
   } else {
     animEls.forEach(el => el.classList.add('in-view'));
   }
